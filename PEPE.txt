@@ -1,0 +1,50 @@
+#define SIZE 3
+
+typedef struct
+{
+	int id;
+	int state;
+}sEmployees;
+
+int addEmployee(sEmployees*, int, int); //TODOS LOS DATOS QUE LE VOY A PASAR PORQUE LO PIDEN ASI 
+sEmployees pedirData(void);
+
+int main()
+{
+	sEmployees listOfEMployees[SIZE];
+	sEmployees auxiliar;
+	
+	initEmployees(listOfEMployees, SIZE);
+	
+	auxiliar = pedirData(void);
+	id = findFree(listOfEMployees);
+	
+	addEmployee(listOfEMployees, SIZE, id, auxiliar.nombre);
+	
+}
+
+int initEmployees (sEmployees* peroncito, int size) //El * es aclaracion que estoy haciendo referencia que voy a llamar a un tipo de dato struct
+{
+	Pongo todo en 0
+	
+	return 0;
+}
+
+int addEmployee(sEmployees* peroncito, int size, int nombre)
+{
+	int i;
+	
+	peroncito[(id-1)].nombre = nombre;
+	
+	return 0;
+}
+
+sEmployees pedirData(void)
+{
+	sEmployees peroncito;
+	
+	printf("Ingrese el nombre);
+	scanf("%d", &peroncito.nombre);
+	
+	return peroncito;
+}
